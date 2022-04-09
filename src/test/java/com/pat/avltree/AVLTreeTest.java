@@ -34,4 +34,13 @@ public class AVLTreeTest
         assertEquals(tree.height(), -1);
     }
 
+    @Test
+    public void testFind()
+    {
+        // final AVLTree root = new AVLTree();
+        tree.insert(0);
+        assertTrue(tree.find(0) != null);
+        tree.delete(0);
+    }
+
 }
