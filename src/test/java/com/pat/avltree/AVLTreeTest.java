@@ -55,4 +55,14 @@ public class AVLTreeTest
         tree.delete(2);
     }
 
+    @Test
+    public void testGetRoot()
+    {
+        assertEquals(tree.getRoot(), null);
+        tree.insert(0);
+        assertTrue(tree.getRoot() != null);
+        tree.delete(0);
+        assertEquals(tree.getRoot(), null);
+    }
+
 }
