@@ -12,8 +12,7 @@ public class AVLTreeTest
     @Test
     public void testInsert()
     {
-        for (int i = 0; i < 10; i++) 
-        {
+        for (int i = 0; i < 10; i++) {
             tree.insert(i);
         }
 
@@ -22,6 +21,17 @@ public class AVLTreeTest
         } catch(Exception e) {
             assertEquals(e.getMessage(), "duplicate Key!");
         }
+    }
+
+    @Test
+    public void testDelete()
+    {
+        for (int i = 0; i < 10; i++) 
+        {
+            tree.delete(i);
+        }
+
+        assertEquals(tree.height(), -1);
     }
 
 }
