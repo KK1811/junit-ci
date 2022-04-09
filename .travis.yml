@@ -1,7 +1,3 @@
 language: java
 jdk: openjdk8
-script: 
-  - "mvn test"
-  - "bash <(curl -Os https://uploader.codecov.io/latest/linux/codecov;chmod +x codecov;./codecov)"
-  - "bash <(chmod +x codecov)"
-  - "bash <(./codecov)"    
+script: "mvn test"
