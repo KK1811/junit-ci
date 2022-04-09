@@ -11,9 +11,13 @@ public class AVLTreeTest
     @Test
     public void testInsert()
     {
+        assertEquals(tree.height(), -1);
+
         for (int i = 0; i < 10; i++) {
             tree.insert(i);
         }
+
+        assertTrue(tree.height() != -1);
 
         try{
             tree.insert(0);
@@ -38,7 +42,13 @@ public class AVLTreeTest
     {
         tree.insert(0);
         assertTrue(tree.find(0) != null);
+        tree.insert(1);
+        assertTrue(tree.find(0) != null);
+        assertTrue(tree.find(1) != null);
+
         tree.delete(0);
+        tree.delete(1);
+        
     }
 
     @Test
