@@ -65,4 +65,22 @@ public class AVLTreeTest
         assertEquals(tree.getRoot(), null);
     }
 
+    @Test
+    public void testGetBalance()
+    {
+        assertEquals(tree.getBalance(null), 0);
+
+        tree.insert(0);
+        tree.insert(1);
+
+        assertEquals(tree.getBalance(tree.find(0)), 1);
+
+        tree.delete(0);
+        tree.delete(1);
+
+        tree.insert(2);
+        assertEquals(tree.getBalance(tree.find(0)), 0);
+        tree.delete(2);
+    }
+
 }
