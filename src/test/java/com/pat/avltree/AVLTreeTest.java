@@ -13,7 +13,11 @@ public class AVLTreeTest
     {
         assertEquals(tree.height(), -1);
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 5; i++) {
+            tree.insert(i);
+        }
+
+        for (int i = 10; i > 5; i--) {
             tree.insert(i);
         }
         
