@@ -16,6 +16,8 @@ public class AVLTreeTest
         for (int i = 0; i < 10; i++) {
             tree.insert(i);
         }
+        
+        tree.insert(-10);
 
         assertTrue(tree.height() != -1);
 
