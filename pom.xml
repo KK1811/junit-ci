@@ -37,6 +37,22 @@
     <!-- <pluginManagement>lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
+          <groupId>io.github.handofgod94</groupId>
+          <artifactId>jacoco-cov-badge-maven-plugin</artifactId>
+          <version>1.1.0</version>
+          <executions>
+            <execution>
+              <id>generate-badge</id>
+              <phase>post-site</phase>
+              <configuration>
+              </configuration>
+              <goals>
+                <goal>badge</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
           <version>0.8.6</version>
