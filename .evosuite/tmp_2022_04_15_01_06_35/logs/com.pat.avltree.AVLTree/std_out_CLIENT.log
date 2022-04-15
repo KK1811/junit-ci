@@ -1,5 +1,5 @@
 * Starting client
-* Connecting to master process on port 2910
+* Connecting to master process on port 10369
 * Analyzing classpath: 
   - /home/fur0xx/Sem2/PAT/testing-pom/junit-ci/target/test-classes
   - /home/fur0xx/Sem2/PAT/testing-pom/junit-ci/target/classes
@@ -17,7 +17,7 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Setting up search algorithm for whole suite generation
-* Loaded 29 tests from /home/fur0xx/Sem2/PAT/testing-pom/junit-ci/.evosuite/evosuite-seeds/com.pat.avltree.AVLTree.seed
+* Loaded 28 tests from /home/fur0xx/Sem2/PAT/testing-pom/junit-ci/.evosuite/evosuite-seeds/com.pat.avltree.AVLTree.seed
 * Total number of test goals: 
   - Line 78
   - Branch 48
@@ -27,12 +27,12 @@
   - Method 8
   - MethodNoException 8
   - CBranchFitnessFactory 48
-* Using seed 1649991973807
+* Using seed 1650002797534
 * Starting evolution
-* Search finished after 31s and 12 generations, 8215 statements, best individual has fitness: 24.166666666666668
+* Search finished after 32s and 7 generations, 4780 statements, best individual has fitness: 24.291666666666668
 * Writing sequences to pool
 * Minimizing test suite
-[MASTER] 22:06:55.105 [pool-2-thread-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+[MASTER] 01:07:20.851 [pool-2-thread-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
 * Going to analyze the coverage criteria
 * Coverage analysis for criterion LINE
 * Coverage of criterion LINE: 100%
@@ -44,8 +44,8 @@
 * Number of covered goals: 47
 * Coverage analysis for criterion EXCEPTION
 * Coverage of criterion EXCEPTION: 100%
-* Total number of goals: 5
-* Number of covered goals: 5
+* Total number of goals: 7
+* Number of covered goals: 7
 * Coverage analysis for criterion WEAKMUTATION
 * Coverage of criterion WEAKMUTATION: 98%
 * Total number of goals: 177
@@ -66,14 +66,10 @@
 * Coverage of criterion CBRANCH: 58%
 * Total number of goals: 48
 * Number of covered goals: 28
-* Generated 19 tests with total length 275
+* Generated 12 tests with total length 217
 * Resulting test suite's coverage: 94% (average coverage for all fitness functions)
 * Generating assertions
-[MASTER] 22:07:00.144 [pool-2-thread-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.9514% of time used, but only 1/19 tests minimized), falling back to using all assertions
-[MASTER] 22:07:01.098 [pool-2-thread-1] WARN  SimpleMutationAssertionGenerator - Reached maximum time to generate assertions, aborting assertion generation
-* Resulting test suite's mutation score: 40%
+[MASTER] 01:07:26.156 [pool-2-thread-1] WARN  SimpleMutationAssertionGenerator - Reached maximum time to generate assertions, aborting assertion generation
+* Resulting test suite's mutation score: 2%
 * Compiling and checking tests
-[MASTER] 22:07:01.155 [pool-2-thread-1] WARN  TimeController - Phase ASSERTION_GENERATION lasted too long, 0 seconds more than allowed.
-* Writing JUnit test case 'AVLTree_ESTest' to /home/fur0xx/Sem2/PAT/testing-pom/junit-ci/.evosuite/tmp_2022_04_14_22_06_11/tests
-* Done!
-
+* Writing JUnit test case 'AVLTree_ESTest' to /home/fur0xx/Sem2/PAT/testing-pom/junit-ci/.evosuite/tmp_2022_04_15_01_06_35/tests
