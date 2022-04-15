@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.pat.avltree.AVLTreeTest" time="0.004" tests="7" errors="1" skipped="0" failures="0">
+<testsuite name="com.pat.avltree.AVLTreeTest" time="0.008" tests="7" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -59,17 +59,15 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testFind" classname="com.pat.avltree.AVLTreeTest" time="0.001"/>
-  <testcase name="findBug" classname="com.pat.avltree.AVLTreeTest" time="0.002">
-    <error type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at com.pat.avltree.AVLTree.mostLeftChild(AVLTree.java:83)
-	at com.pat.avltree.AVLTree.delete(AVLTree.java:69)
-	at com.pat.avltree.AVLTree.delete(AVLTree.java:34)
-	at com.pat.avltree.AVLTreeTest.findBug(AVLTreeTest.java:108)
-</error>
+  <testcase name="testFind" classname="com.pat.avltree.AVLTreeTest" time="0.002"/>
+  <testcase name="findBug" classname="com.pat.avltree.AVLTreeTest" time="0.003">
+    <failure message="Exception java.lang.NullPointerException" type="java.lang.AssertionError">java.lang.AssertionError: Exception java.lang.NullPointerException
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.pat.avltree.AVLTreeTest.findBug(AVLTreeTest.java:112)
+</failure>
   </testcase>
   <testcase name="testGetRoot" classname="com.pat.avltree.AVLTreeTest" time="0"/>
-  <testcase name="testGetBalance" classname="com.pat.avltree.AVLTreeTest" time="0"/>
+  <testcase name="testGetBalance" classname="com.pat.avltree.AVLTreeTest" time="0.002"/>
   <testcase name="testDelete" classname="com.pat.avltree.AVLTreeTest" time="0"/>
   <testcase name="testHeight" classname="com.pat.avltree.AVLTreeTest" time="0"/>
   <testcase name="testInsert" classname="com.pat.avltree.AVLTreeTest" time="0.001"/>

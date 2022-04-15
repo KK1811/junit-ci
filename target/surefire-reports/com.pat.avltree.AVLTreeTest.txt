@@ -1,11 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: com.pat.avltree.AVLTreeTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.092 sec <<< FAILURE! - in com.pat.avltree.AVLTreeTest
-findBug(com.pat.avltree.AVLTreeTest)  Time elapsed: 0.002 sec  <<< ERROR!
-java.lang.NullPointerException: null
-	at com.pat.avltree.AVLTree.mostLeftChild(AVLTree.java:83)
-	at com.pat.avltree.AVLTree.delete(AVLTree.java:69)
-	at com.pat.avltree.AVLTree.delete(AVLTree.java:34)
-	at com.pat.avltree.AVLTreeTest.findBug(AVLTreeTest.java:108)
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec <<< FAILURE! - in com.pat.avltree.AVLTreeTest
+findBug(com.pat.avltree.AVLTreeTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError: Exception java.lang.NullPointerException
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.pat.avltree.AVLTreeTest.findBug(AVLTreeTest.java:112)
 
