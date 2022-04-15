@@ -1,4 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: com.pat.avltree.AVLTreeTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec - in com.pat.avltree.AVLTreeTest
+Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.062 sec <<< FAILURE! - in com.pat.avltree.AVLTreeTest
+findBug(com.pat.avltree.AVLTreeTest)  Time elapsed: 0.006 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.pat.avltree.AVLTree.mostLeftChild(AVLTree.java:83)
+	at com.pat.avltree.AVLTree.delete(AVLTree.java:69)
+	at com.pat.avltree.AVLTree.delete(AVLTree.java:34)
+	at com.pat.avltree.AVLTreeTest.findBug(AVLTreeTest.java:108)
+

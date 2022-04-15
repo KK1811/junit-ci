@@ -40,6 +40,8 @@ public class AVLTreeTest
             tree.delete(i);
         }
 
+        tree.delete(-10);
+
         assertEquals(tree.height(), -1);
     }
 
@@ -96,6 +98,17 @@ public class AVLTreeTest
         tree.insert(2);
         assertEquals(tree.getBalance(tree.find(0)), 0);
         tree.delete(2);
+    }
+
+    @Test
+    public void findBug()
+    {
+        tree.insert(1);
+        tree.insert(0);
+        tree.delete(1);
+        tree.delete(0);
+        /* If the tree has only 2 nodes such that the root has only a left child, 
+        a null object is passed to the mostLeftChild function and the code gives an error*/
     }
 
 }
