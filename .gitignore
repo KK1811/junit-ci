@@ -1,5 +1,5 @@
 # Ignore target folder
-# target/
+target/
 
 #Ignore .evosuite
-# .evosuite/
+.evosuite/
