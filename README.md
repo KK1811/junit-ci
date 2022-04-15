@@ -3,4 +3,3 @@
 <!-- ![Coverage](.github/badges/jacoco.svg) -->
 
 ![Coverage Image](./target/coverage.svg)
-<img src="./target/coverage.svg">

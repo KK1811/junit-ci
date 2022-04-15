@@ -36,7 +36,7 @@
   <build>
     <!-- <pluginManagement>lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
-        <plugin>
+        <!-- <plugin>
           <groupId>io.github.handofgod94</groupId>
           <artifactId>jacoco-cov-badge-maven-plugin</artifactId>
           <version>1.1.0</version>
@@ -51,7 +51,7 @@
               </goals>
             </execution>
           </executions>
-        </plugin>
+        </plugin> -->
         <plugin>
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>

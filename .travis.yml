@@ -2,6 +2,6 @@ language: java
 jdk: openjdk8
 script: 
   - mvn compile evosuite:generate evosuite:export
-  - mvn clean test
+  - mvn test
   - mvn io.github.handofgod94:jacoco-cov-badge-maven-plugin:1.1.0:badge 
 
